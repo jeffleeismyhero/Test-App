@@ -1,2 +1,6 @@
 require 'inploy/helper'
 require 'inploy/deploy'
+require 'rake'
+require 'rake/rdoctask'
+require 'rake/testtask'
+require 'tasks/rails'
