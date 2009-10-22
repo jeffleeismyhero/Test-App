@@ -40,11 +40,11 @@ module Inploy
     end
 
     def rake_if_included(command)
-      Rake.application["'#{command}'"].invoke if tasks.include?("rake #{command}")
+      Rake.application["#{command}"].invoke if tasks.include?("rake #{command}")
     end
 
     def rake(command)
-      Rake.application["'#{command}'"].invoke
+      Rake.application["#{command}"].invoke
     end
 
     def remote_run(command)
